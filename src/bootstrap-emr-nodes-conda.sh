@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Mostly taken from here: https://gist.github.com/nicor88/5260654eb26f6118772551861880dd67
 
 set -x -e
 # home backup
@@ -28,7 +29,7 @@ conda config -f --add channels conda-forge
 conda config -f --add channels defaults
 
 conda install pip=20.0.2
-pip install Cython
+pip install Cython # you'll need this for pyarrow
 
 conda install -c conda-forge pyarrow
 pip install pandas==1.0.1 pyspark==2.4.4 tensorflow==2.2.0 tensorflow-hub==0.8.0

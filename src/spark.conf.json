@@ -1,0 +1,14 @@
+[
+  {
+     "Classification": "spark-env",
+     "Configurations": [
+       {
+         "Classification": "export",
+         "Properties": {
+            "PYSPARK_PYTHON": "/home/hadoop/conda/bin/python3",
+	    "ARROW_PRE_0_15_IPC_FORMAT": "1"
+          }
+       }
+    ]
+  }
+]
